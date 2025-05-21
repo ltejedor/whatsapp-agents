@@ -1,0 +1,4 @@
+smolagents
+mcp
+anthropic
+python-dotenv
