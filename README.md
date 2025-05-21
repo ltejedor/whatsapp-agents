@@ -64,37 +64,8 @@ go run main.go
 
 The first time you run it, you'll be prompted to scan a QR code with your WhatsApp mobile app to authenticate.
 
-### 5. Connect to the MCP Server (For Claude Desktop or Cursor)
 
-#### For Claude Desktop:
-
-Create a configuration file at `~/Library/Application Support/Claude/claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "whatsapp": {
-      "command": "{{PATH_TO_UV}}", 
-      "args": [
-        "--directory",
-        "{{PATH_TO_REPO}}/1_mcp/whatsapp-mcp/whatsapp-mcp-server", 
-        "run",
-        "main.py"
-      ]
-    }
-  }
-}
-```
-
-Replace:
-- `{{PATH_TO_UV}}` with the output of `which uv`
-- `{{PATH_TO_REPO}}` with the absolute path to your cloned repository
-
-#### For Cursor:
-
-Create a configuration file at `~/.cursor/mcp.json` with the same content as above.
-
-### 6. Run the Example Agent
+### 5. Run the Example Agent
 
 ```bash
 cd 1_mcp
