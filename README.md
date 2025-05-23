@@ -103,7 +103,7 @@ The WhatsApp Agents project consists of three main components:
 
 ## Approaches to WhatsApp Integration
 
-### 1. MCP Server (Implemented)
+### 1. MCP Server 
 
 The current implementation uses an unofficial but straightforward approach:
 - Connects directly to your personal WhatsApp account via the web multidevice API
@@ -114,7 +114,7 @@ The current implementation uses an unofficial but straightforward approach:
 **Pros**: Easy setup, works with personal accounts, full message history access
 **Cons**: Unofficial API, requires maintaining an active session
 
-### 2. Meta Business API (Coming Soon)
+### 2. Meta Business API 
 
 The official approach using Meta's WhatsApp Business API:
 - Requires a Meta Business account and approval process
@@ -122,8 +122,6 @@ The official approach using Meta's WhatsApp Business API:
 - Limited message history retention
 - Follows official Meta guidelines and policies
 
-**Pros**: Official support, more reliable for production
-**Cons**: More complex setup, requires business verification, potential costs
 
 ## Troubleshooting
 
