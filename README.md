@@ -1,4 +1,4 @@
-# WhatsApp Agents: Building AI Where Your Users Are
+# WhatsApp Agents: Building Where Your Users Are
 
 Build AI agents that integrate directly with WhatsApp, enabling seamless interactions with users where they already communicate.
 
