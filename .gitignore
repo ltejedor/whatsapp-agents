@@ -4,3 +4,6 @@
 
 1_mcp/.env
 2_api/.env
+
+2_api/node_modules
+2_api/package-lock.json

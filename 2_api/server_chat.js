@@ -4,6 +4,8 @@
  * This tutorial demonstrates how to build a WhatsApp chatbot
  * using the WhatsApp Business API, Express, and OpenAI.
  */
+import dotenv from "dotenv";
+dotenv.config();
 
 import express from "express";
 import axios from "axios";
