@@ -76,7 +76,7 @@ app.post("/webhook", async (req, res) => {
     try {
       // Get media URL
       const { data: mediaMeta } = await axios.get(
-        `https://graph.facebook.com/v18.0/${mediaId}`,
+        `https://graph.facebook.com/v23.0/${mediaId}`,
         {
           params: { fields: "url,mime_type" },
           headers: { Authorization: `Bearer ${GRAPH_API_TOKEN}` },
@@ -117,7 +117,7 @@ app.post("/webhook", async (req, res) => {
 
       // Send response back to WhatsApp
       await axios.post(
-        `https://graph.facebook.com/v18.0/${phoneId}/messages`,
+        `https://graph.facebook.com/v23.0/${phoneId}/messages`,
         {
           messaging_product: "whatsapp",
           to: userId,
@@ -130,7 +130,7 @@ app.post("/webhook", async (req, res) => {
       console.error("Error processing image:", error);
       // Send error message to user
       await axios.post(
-        `https://graph.facebook.com/v18.0/${phoneId}/messages`,
+        `https://graph.facebook.com/v23.0/${phoneId}/messages`,
         {
           messaging_product: "whatsapp",
           to: userId,
@@ -175,7 +175,7 @@ app.post("/webhook", async (req, res) => {
 
       // Send WhatsApp reply
       await axios.post(
-        `https://graph.facebook.com/v18.0/${phoneId}/messages`,
+        `https://graph.facebook.com/v23.0/${phoneId}/messages`,
         {
           messaging_product: "whatsapp",
           to: userId,
@@ -187,7 +187,7 @@ app.post("/webhook", async (req, res) => {
 
       // Mark message as read
       await axios.post(
-        `https://graph.facebook.com/v18.0/${phoneId}/messages`,
+        `https://graph.facebook.com/v23.0/${phoneId}/messages`,
         {
           messaging_product: "whatsapp",
           status: "read",
