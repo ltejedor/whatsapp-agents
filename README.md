@@ -1,5 +1,7 @@
 # WhatsApp Agents: Building Where Your Users Are
 
+Code for the blog post https://www.leandratejedor.com/post/ai-agents-on-whatsapp-building-where-your-users-are
+
 Build AI agents that integrate directly with WhatsApp, enabling seamless interactions with users where they already communicate.
 
 ## Why WhatsApp?
