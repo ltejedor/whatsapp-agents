@@ -1,4 +1,4 @@
-# WhatsApp Agents: Building Where Your Users Are
+# WhatsApp Agents: MCP + Server for Meta's WhatsApp API 
 
 Code for the blog post https://www.leandratejedor.com/post/ai-agents-on-whatsapp-building-where-your-users-are
 
