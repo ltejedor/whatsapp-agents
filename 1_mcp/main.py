@@ -13,7 +13,7 @@ def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     # After reorganizing MCP servers, locate WhatsApp MCP under mcp-servers
     whatsapp_mcp_dir = os.path.abspath(
-        os.path.join(current_dir, "..", "mcp-servers", "whatsapp-mcp", "whatsapp-mcp-server")
+        os.path.join(current_dir, ".", "whatsapp-mcp", "whatsapp-mcp-server")
     )
     
     server_parameters = StdioServerParameters(
@@ -24,7 +24,7 @@ def main():
     )
 
     # Create a tool collection from the MCP server
-    with ToolCollection.from_mcp(server_parameters, trust_remote_code=True) as tool_collection:
+    with ToolCollection.from_mcp(server_parameters) as tool_collection:
         # Initialize the agent with tools from the MCP server and the client as the model
         agent = CodeAgent(
             tools=[*tool_collection.tools], 
